@@ -2,7 +2,7 @@
 <html lang="tr-TR">
     <head>
         <meta charset="UTF-8">
-        <title>2015 Türkiye Genel Seçim Sonuçları</title>
+        <title>KYK Yurtları Puanlaması</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row">
             <div class="col-xs-12">
-                    <h2 class="text-center page-header">2015 Türkiye Genel Seçim Sonuçları</h2>
+                    <h2 class="text-center page-header">2020 KYK Yurtları Genel Puanlaması</h2>
 
                      <ul class="text-primary">
                         <li>Filtrelemek için herhangi bir şehir veya baloncuğa tıklayın</li>
@@ -131,7 +131,7 @@ d3.csv("sonuclar.csv", function(csv) {
             return d.properties.name;
         }).projection(projection)
         .title(function(d) {
-            return "Şehir: " + d.key + "\nToplam Oy: " + (d.value ? d.value : 0);
+            return "Şehir: " + d.key + "\nToplam Puan: " + (d.value ? d.value : 0);
         });
 
         partyChart.width(990)
